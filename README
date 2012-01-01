@@ -1,0 +1,36 @@
+Before run it:
+
+    - you must add your Twitter oAuth credential. See TwitterApps help on twitter page to get it.
+    - you must install dependencies:
+
+        # easy_install python-daemon
+        # easy_install python-twitter
+
+
+
+pyTwitSpeak can be run as Daemon or as simple executable with messages in Standard Output.
+It also may be run inside python shell:
+
+    <python terminal code>
+    
+    from pyspeaktwit import *
+    
+    t = TweetSpeak(**auth_dict)
+    
+    t.FetchTimeline()
+    t.GetLatests()
+    t.SayLatests()
+    
+    </end>
+
+
+
+To run it in daemon mode you must configure it inside DAEMON variable in pyspeaktwit.py and execute the program:
+
+    python pyspeaktweet.py
+
+# TODO
+# decouple configuration inside another .py file and import it at execution time
+# predict language with a collect of words frequency inside twits and make espeak talk with appropriate lang !
+# Make logging file for daemon mode ! (important)
+
