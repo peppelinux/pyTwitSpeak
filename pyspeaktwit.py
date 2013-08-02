@@ -2,22 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # leggiamo i tweet con espeak con python-twitter
-
-
-# errori random dalle librerie.. perfortuna rarissimi
-"""
-Traceback (most recent call last):
-  File "./pyspeaktwit.py", line 158, in <module>
-    t.FetchTimeline()
-  File "./pyspeaktwit.py", line 82, in FetchTimeline
-    self.timeline_raw = self.api.GetFriendsTimeline() #self.timeline_raw = self.api.GetPublicTimeline()
-  File "/usr/local/lib/python2.6/dist-packages/python_twitter-0.8.2-py2.6.egg/twitter.py", line 2580, in GetFriendsTimeline
-    data = self._ParseAndCheckTwitter(json)
-  File "/usr/local/lib/python2.6/dist-packages/python_twitter-0.8.2-py2.6.egg/twitter.py", line 3671, in _ParseAndCheckTwitter
-    raise TwitterError("Capacity Error")
-twitter.TwitterError: Capacity Error
-"""
-
+# codice scritto durante i giorni di "Insert-Coin", presso la sala espositiva di Palazzo Arnone
+# verdebinario.org
 
 import twitter
 import datetime
